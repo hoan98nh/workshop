@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+import CheckoutPaymentRadio from "../../../components/CheckoutPaymentRadio"
 
 const CheckOut = () => {
   return (
@@ -86,9 +88,13 @@ const CheckOut = () => {
             <div>
               {/* <input type="radio" name="" id="" className="" /> */}
               {/* radio input + collapse */}
+              <CheckoutPaymentRadio/>
+              <p className="mt-8">
+              Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <Link to={"privacy"} className="font-medium">privacy policy</Link>.
+              </p>
             </div>
             <div className='text-center mt-8'>
-              <button className='w-full max-w-[342px] py-2 border border-[#CA8A04] text-[#CA8A04] font-semibold'>Check out</button>
+              <button className='w-full max-w-[342px] py-2 border border-[#CA8A04] text-[#CA8A04] font-semibold'>Place order</button>
             </div>
           </div>
         </div>

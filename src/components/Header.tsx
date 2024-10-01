@@ -9,10 +9,10 @@ const Header = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-3 gap-8 items-center py-4">
                     <div>
-                        <img src="/Frame 168.png" className='h-[41px]' alt="NhShop" />
+                        <Link to={'/'}><img src="/Frame 168.png" className='h-[41px]' alt="NhShop" /></Link>
                     </div>
                     <nav>
-                        <ul className="flex justify-center space-x-5 ">
+                        <ul className="flex justify-center space-x-5 text-[20px] font-medium">
                             <li>
                                 <Link to="/" className="hover:text-red-500">
                                     Home
@@ -35,7 +35,7 @@ const Header = () => {
                             </li>
                         </ul>
                     </nav>
-                    <div className="flex justify-end space-x-4">
+                    <div className="flex justify-end space-x-4 text-[24px]">
                         <Link to="/auth/login">
                             <AiOutlineUser />
                         </Link>
@@ -45,7 +45,7 @@ const Header = () => {
                         <Link to="/wishlist">
                             <AiOutlineHeart />
                         </Link>
-                        <Link to="/wishlist">
+                        <Link to="/cart">
                             <IoCartOutline />
                         </Link>
                     </div>

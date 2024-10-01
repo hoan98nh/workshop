@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="grid grid-cols-4 gap-8 border-b-[1px] border-[#D9D9D9] py-[64px]">
                     <div className='grid-cols-3'>
                         <div>
-                            <img src="./logo-white.svg" className='h-[41px]' alt="logo" />
+                            <img src="/logo-white.svg" className='h-[41px]' alt="logo" />
                         </div>
                         <div className='mt-[16px]'>
                             <span>
@@ -21,16 +21,16 @@ const Footer = () => {
                         <h3 className='h-[41px] content-center font-semibold text-[20px]'>Sitemap</h3>
                         <ul className='mt-[16px]'>
                             <li className='mb-4'>
-                                <Link to={''}  className='hover:underline'>Home</Link>
+                                <Link to={'/'}  className='hover:underline'>Home</Link>
                             </li>
                             <li className='mb-4'>
-                                <Link to={''}  className='hover:underline'>Shop</Link>
+                                <Link to={'/shop'}  className='hover:underline'>Shop</Link>
                             </li>
                             <li className='mb-4'>
-                                <Link to={''}  className='hover:underline'>About</Link>
+                                <Link to={'/about'}  className='hover:underline'>About</Link>
                             </li>
                             <li>
-                                <Link to={''}  className='hover:underline'>Contact</Link>
+                                <Link to={'/contact'}  className='hover:underline'>Contact</Link>
                             </li>
                         </ul>
                     </div>
